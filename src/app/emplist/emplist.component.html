@@ -1,0 +1,56 @@
+<app-empcount [all]="getTotalEmployeesCount()" 
+              [male]="getMaleEmployeesCount()"
+              [female]="getFemaleEmployeesCount()"
+              (countRadioButtonSelectionChanged)="onEmployeeRadioChange($event)">
+            </app-empcount>
+
+<br>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>EmployeeId</th>
+            <th>EmployeeName</th>
+            <th>Gender</th>
+            <th>Title</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th>Address</th>
+            <th>DOB</th>
+            <th>AGE</th>
+            <th>Index</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let emp of employees;trackBy:trackbyEMPCode;let i=index">
+            <td>{{emp.empid}}</td>
+            <td>{{emp.empname|title:emp.gender}}</td>
+            <td>{{emp.gender}}</td>
+            <td>{{emp.title}}</td>
+            <td>{{emp.salary}}</td>
+            
+
+            <td [ngSwitch]="emp.department">
+                <span *ngSwitchCase="1">HR</span>
+                <span *ngSwitchCase="2">IT</span>
+                <span *ngSwitchCase="3">Security</span>
+                <span *ngSwitchCase="4">Finance</span>
+                <span *ngSwitchDefault>Others</span>
+
+            </td>
+            <td>{{emp.address}}</td>
+            <td>{{emp.dob}}</td>
+            <td>{{emp.dob|age}}</td>
+            <td>{{i}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br>
+<button (click)="refresh()">Get Latest Data</button>
+
+<p>----------------------------------------------------------------------------------------</p>
+
+<app-pipe></app-pipe>

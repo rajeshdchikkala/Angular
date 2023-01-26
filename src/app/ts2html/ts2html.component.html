@@ -1,0 +1,46 @@
+<!--
+
+    Two Way Data Binding
+
+    Any change in HTML automatically updated to TS
+
+    Any change in TypeScript Automatically updated to HTML
+
+    [(ngModel)]="data" ==> Syntax
+
+    1) Binding Typescript data to HTML Using {{ < typescript data >}}
+    2) Here we can also use typescript functions with in {{ <TSFUNCTION>}}
+
+    ngModel and form-control are availble in FormsModule which should be 
+    added in app.module.ts
+    
+    if we dont add FormsModule in app.module.ts then it willgive error at templateUrl: './ts2html.component.html', on 
+    componentname.component.ts file. also add below import in app.modue.ts
+    import { FormsModule } from '@angular/forms';
+
+-->
+
+<h1>One Way Binding from TS to HTML</h1>
+<p>-------------------------------------------------------------------------------</p>
+
+<label for="title">Title :</label>
+<input type="text" placeholder="Two way Binding" 
+[(ngModel)]="title" class="form-control"/>
+
+<div style="text-align:left">
+    <Strong> The title from text box ::: </Strong> {{title}}
+</div>
+<div style="text-align:left">
+    <Strong>Current Time using setvalue :::</Strong> {{datevalue}}
+</div>
+<div  style="text-align:left">
+<h1> User Data by passing it from TS file  </h1>
+<label for="UserName" ><b>User Name ::</b> {{getUserName()}}</label> <br>
+<label for="FirstName"><b>First Name :: </b>{{getFirstName()}}</label><br>
+<label for="LastName"><b>Last Name :: </b> {{getLastName()}}</label> <br>
+<label for="EmailId"><b>EmailId :: </b> {{getemailId()}}</label>
+</div>
+
+<p>-------------------------------------------------------------------------------</p>
+
+<app-html2ts></app-html2ts>

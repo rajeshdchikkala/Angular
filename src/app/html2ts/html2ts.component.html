@@ -1,0 +1,23 @@
+<!--  Any change in HTML to typescript via HTML Events like click,change...
+
+    Angular is having EventBinding where we can simply pass through events
+
+    property binding is done to control dom.  so see in button tag added the disabled tag
+-->
+<h1>One Way Binding from HTML to TS</h1>
+<p>-------------------------------------------------------------------------------</p>
+
+
+<div><label for="GuestName" style="font-weight:bold">Guest Name :</label><span></span><input type="text" placeholder="Enter GuestName" #myInput></div> <br>
+
+<div><button [disabled] ="buttonStatus" (click)="updateGuest(myInput.value)">Greet Guest</button></div>
+
+<br>
+
+<label for="UserName" ><b>Guest Name is :::</b> {{guestName}} </label>
+
+<br><br>
+Product Status is 
+<p [ngStyle]="{backgroundColor:getColor()}">{{productStatus}}</p>
+
+<app-visitingcard name="Ravi Kumar" [newUser]="addJson"></app-visitingcard>

@@ -1,0 +1,24 @@
+<p> Default pipes and uses</p>
+<label><b>var_one :</b></label> {{var_one | uppercase}} <br>
+<!-- var_one is argument and uppercase is condition-->
+<label><b>var_two :</b></label>{{var_two | lowercase}}<br>
+<label><b>var_three :</b></label>{{var_three | titlecase}} <br>
+<label><b>var_four :</b></label>{{var_four | number:"3.2-4"}} <!-- 100.12333445= 100.1234--> <br>
+<label><b>var_four with change :</b></label>{{var_four | number:"4.1-2"}} <!-- 100.12333445= 0,100.12----><br>
+<label><b>var_five :</b></label>{{var_five | number:"4.1-2"}} <!-- 200= 0,200.00----><br>
+<label><b>var_five_currency :</b></label>{{var_five | currency}}<!-- currency symbol--><br>
+<label><b>var_five_INR :</b></label>{{var_five | currency:"INR"}} <br>
+<label><b>var_five_EUR :</b></label>{{var_five | currency:"EUR"}} <br>
+<label><b>var_six :</b></label>{{var_six}} <br>
+<label><b>var_six_ddMMYYYY :</b></label>{{var_six | date:"dd-MM-yyyy"}} <br>
+<label><b>var_six_ddMMMYYYY :</b></label>{{var_six | date:"dd-MMM-yyyy"}} <br>
+<label><b>var_six_ddMMMYY :</b></label>{{var_six | date:"dd-MMM-yy"}} <br>
+<label><b>var_six_short :</b></label>{{var_six | date:"short"}} <br>
+<label><b>var_six_medium :</b></label>{{var_six | date:"medium"}} <br>
+<label><b>var_six_fulldate :</b></label>{{var_six | date:"fullDate"}} <br>
+<label><b>var_seven :</b></label>{{var_seven}} <br>
+<label><b>var_seven_json :</b></label>{{var_seven | json}} <br>
+<label><b>var_eight :</b></label>{{var_eight | slice:2:5}} <!-- from 2 to5 get all elements--> <br>
+<label><b>var_nine :</b></label>{{var_nine}} <br>
+<label><b>var_nine_async :</b></label>{{var_nine | async}} <br>
+<label><b>var_ten_reverse_pipe :</b></label>{{var_ten | reverse}}<!-- Reverse custom pipe which we can use any where in project-->

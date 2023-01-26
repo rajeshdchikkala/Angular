@@ -1,0 +1,27 @@
+<p>-------------------------------------------------------------------------------</p>
+<h1>Visiting Card User Details --Displaying details from json passed in ts file</h1>
+<p>-------------------------------------------------------------------------------</p>
+<div *ngFor="let user of users" style="box-sizing: border-box;width: 700px;">
+     <label for="uName"><b> User Name: </b></label> {{user.name}} <br>
+     <label for="uTitle"><b>  Title   : </b></label>{{user.title}} <br>
+     <label for="uSalary"><b>  Salary  : </b></label>{{user.salary}} <br>
+        <div [ngSwitch]="user.department">
+            <label for="uDept"><b>  Department: </b></label>
+               <span *ngSwitchCase="1">HR</span>
+               <span *ngSwitchCase="2">Finance</span>
+               <span *ngSwitchCase="3">Technical</span>
+               <span *ngSwitchCase="4">Utilities</span>
+        </div>
+        <label for="uAddress"><b> Address : </b></label>{{user.address}}
+        <br>
+        <label for="uPhones"><b> Phone Numbers: </b></label>
+        <ul>
+          <div *ngIf="user.phones.length>0" style="box-sizing: border-box;margin-top: -17px;margin-left: 91px;">
+               <li *ngFor="let phone of user.phones">{{phone}}</li> 
+          </div>
+       </ul>
+       <p>-------------------------------------------------------------------------------</p>  
+</div>
+
+<p>-------------------------------------------------------------------------------</p>  
+<app-emplist></app-emplist>
