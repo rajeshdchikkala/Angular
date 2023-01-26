@@ -1,6 +1,6 @@
 # Angular
 
-completed Below tpics
+Completed Below Topics
 1) Basics of Angular
 2) Data binidng based on property
 3) Data pass from ne component toanother component
