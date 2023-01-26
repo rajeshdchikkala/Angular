@@ -9,7 +9,7 @@ export class Ts2htmlComponent {
    title:string="Angular14"; //TypeScript variable
    datevalue:string="";
 
-   private userName:string="s.rani";
+   private userName:string="s.rani"; //updated values
    private firstName:string="Sandhya";
    private lastName:string="Rani";
    private emailId:string="sandhyarani@gmail.com";
