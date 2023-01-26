@@ -9,10 +9,10 @@ export class Ts2htmlComponent {
    title:string="Angular14"; //TypeScript variable
    datevalue:string="";
 
-  private userName:string="chrajeshd84";
-   private firstName:string="Rajesh";
-   private lastName:string="Chikkala";
-   private emailId:string="chrajeshd84@gmail.com";
+   private userName:string="s.rani";
+   private firstName:string="Sandhya";
+   private lastName:string="Rani";
+   private emailId:string="sandhyarani@gmail.com";
 
   constructor(){
     setInterval( () => {
