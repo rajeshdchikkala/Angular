@@ -1,6 +1,24 @@
 # Angular - Completed Below Topics #
 
+## SPA ##
+   - This is known as Single page application.
+   - Initially we were using Multipage application where each request will go to server. Server will process all request one by one based on page response. In this complete page will refreshed.
+   - To over come this we started using Ajax where static content displayed.
+   - After this we started to use dynamic eg. Amazon app. based on preferences page will be rendered.
+   - After this SPA came. for SPA only body tag is getting refreshed.
+   
 ## Basics of Angular ##
+   - Angular is a platform or framework for developing the client-side application in HTML and Typescript.
+   - This framework is created by Google.
+   - This framework will reduce the burden on server with `SPA Architecture`.
+   - This uses `MVC` pattern. It is component based architecture.
+     - **Model** is nothing but .ts file i.e. properties having data (Servie.ts)
+	 - **View** is HTML.
+	 - **Controller** is ts file which will have validation and business logic eg. Component.ts file
+   - This framework is mainly used for developing web application for all pc, mobiles and other devices.
+   - Its a client side framework where Complete page processing is done at client side only.
+      
+
 
 ## Data binidng based on property ##
 
@@ -9,26 +27,6 @@
 ## loops and conditions ##
 
 ## Inline component call ##
-
-## use of Trackby ##
-   - TrackBy is a directive that can work with ngFor to identify items in a list of DOM elements like a list or array to perform unique updates in the DOM, improving the speed and performance.
-   - Track by is used to get only changed row.
-   
-## Pipes/custom pipes creation and there uses ##
-   - Pipes is an angular implementation , which will only change DOM data before rendering to browser without changing the actual data.
-   - we are displaying user friendly data.
-   - Angular will have 2 types of pipes.
-        - **Custom Pipe :** 
-	          Pipes written with specific conditions by developer.
-	    - **Built in Pipes**
-   - **SYNTAX FOR CREATING PIPE:**
-       - `ng g p <pipe-name>`
-   
-## Event emitter ##
-   - Data flows into our component via property bindings and flows out of our component through event bindings. 
-   - If we want our component to notify parent component about something then we can use the Output decorator with EventEmitter to create a custom event.
-   - **Uses:**
-     - Use in components with the `@Output directive` to emit custom events synchronously or asynchronously, and register handlers for those events by subscribing to an instance
 
 ## Modules ##
    - App Module :path is ./app/app-module.
@@ -56,6 +54,26 @@
        - In App.module.ts with @ngModule wehave Bootstrap tag where we need o change with our newly defined component i.e. take our AppModule and add new module.
 	   - in index.html, change the component name with `<app-first></app-first>`
 	   
+## use of Trackby ##
+   - TrackBy is a directive that can work with ngFor to identify items in a list of DOM elements like a list or array to perform unique updates in the DOM, improving the speed and performance.
+   - Track by is used to get only changed row.
+   
+## Event emitter ##
+   - Data flows into our component via property bindings and flows out of our component through event bindings. 
+   - If we want our component to notify parent component about something then we can use the Output decorator with EventEmitter to create a custom event.
+   - **Uses:**
+     - Use in components with the `@Output directive` to emit custom events synchronously or asynchronously, and register handlers for those events by subscribing to an instance	   
+
+## Pipes/custom pipes creation and there uses ##
+   - Pipes is an angular implementation , which will only change DOM data before rendering to browser without changing the actual data.
+   - we are displaying user friendly data.
+   - Angular will have 2 types of pipes.
+        - **Custom Pipe :** 
+	          Pipes written with specific conditions by developer.
+	    - **Built in Pipes**
+   - **SYNTAX FOR CREATING PIPE:**
+       - `ng g p <pipe-name>`	   
+	   	   
 ## Use of ng-container ##
    - The `<ng-container>` allows us to use structural directives without any extra element, 
      making sure that the only DOM changes being applied are those dictated by the directives themselves.
