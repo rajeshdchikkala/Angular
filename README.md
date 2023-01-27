@@ -54,7 +54,7 @@
        - `ng generate component <component-name>` OR `ng g c <component-name>`
    ### Create a component as Root Component:
        - In App.module.ts with @ngModule wehave Bootstrap tag where we need o change with our newly defined component i.e. take our AppModule and add new module.
-	   - in index.html, changethe component name with `<app-first></app-first>`
+	   - in index.html, change the component name with `<app-first></app-first>`
 	   
 ## Use of ng-container 
    - The `<ng-container>` allows us to use structural directives without any extra element, 
@@ -65,16 +65,16 @@
    - Its common business logic which can be used across the application.
    - There are two types of directies 
       ### PREDEFINED DIRECTIVES : 
-	        - Directives which are created by Angular framework.
-	        - Predefined directives are categorized into 3 types.
-		      - STRUCTURAL DIRECTIVES: 
+	      - Directives which are created by Angular framework.
+	      - Predefined directives are categorized into 3 types.
+		     - STRUCTURAL DIRECTIVES: 
 		        - This will start with `*` Symmbol. Mostly used for manipulating the DOM
 		        - Examples: 
-			          - (i) `*ngIf` = This will check whether to render the DOM element based on conditions.
-			          - (ii)`*ngFor`= This will iterate collection data structure,DOM will automatically rendered with collection.
+			          - `*ngIf` = This will check whether to render the DOM element based on conditions.
+			          - `*ngFor`= This will iterate collection data structure,DOM will automatically rendered with collection.
 	    
 	  ### CUSTOM DIRECTIVES :
-	        - Directives which are developed by developer
+	      - Directives which are developed by developer
 =======
 # Databind
 
