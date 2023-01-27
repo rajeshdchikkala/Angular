@@ -25,9 +25,9 @@
        - `ng g p <pipe-name>`
    
 ## Event emitter ##
-   - Data flows into your component via property bindings and flows out of your component through event bindings. 
-   - If we want your component to notify parent component about something then we can use the Output decorator with EventEmitter to create a custom event.
-   - Uses:
+   - Data flows into our component via property bindings and flows out of our component through event bindings. 
+   - If we want our component to notify parent component about something then we can use the Output decorator with EventEmitter to create a custom event.
+   - **Uses:**
      - Use in components with the `@Output directive` to emit custom events synchronously or asynchronously, and register handlers for those events by subscribing to an instance
 
 ## Modules ##
@@ -52,7 +52,7 @@
 	              These 3 files will be transpiled to get `product.js` which will be residing in main.js. 
    - **SYNTAX TO CREATE COMPONENT:** 
        - `ng generate component <component-name>` OR `ng g c <component-name>`
-   - **Create a component as Root Component:**
+   - ***Create a component as Root Component:***
        - In App.module.ts with @ngModule wehave Bootstrap tag where we need o change with our newly defined component i.e. take our AppModule and add new module.
 	   - in index.html, change the component name with `<app-first></app-first>`
 	   
