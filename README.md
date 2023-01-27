@@ -1,25 +1,26 @@
 # Angular
 
-Completed Below Topics
-1) Basics of Angular
-2) Data binidng based on property
-3) Data pass from one component to another component
-4) loops and conditions
-5) Inline component call
-5) use of Trackby 
+# Completed Below Topics
+## Basics of Angular
+## Data binidng based on property
+## Data pass from one component to another component
+## loops and conditions
+## Inline component call
+## use of Trackby 
    -> Track by is used to get only changed row.
    
-6) Pipes/custom pipes creation and there uses
+## Pipes/custom pipes creation and there uses
    -> Pipes is an angular implementation , which will only change DOM data before rendering to browser without changing the actual data.
    -> we are displaying user friendly data.
    -> Angular will have 2 types of pipes.
-       => Custom Pipe : Pipes written with specific conditions by developer.
-	   => Built in Pipes
-   -> SYNTAX FOR CREATING PIPE: ng g p <pipename>
+       ### Custom Pipe : 
+	          Pipes written with specific conditions by developer.
+	   ### Built in Pipes
+   ### SYNTAX FOR CREATING PIPE: ng g p <pipe-name>
    
-7) Event emitter
+## Event emitter
 
-8) Modules:
+## Modules:
    -> App Module :path is ./app/app-module
    -> platformBrowserDynamic imported through @angular/platform.
    -> In general every Angular project has Default Module and Defualt component.
@@ -29,7 +30,7 @@ Completed Below Topics
    -> Minimum it should have one Module and one component.
    -> App component is root component.
    
-9) Component
+## Component
    -> It is building block of functional elements
    -> Every angular application consists of at least one component.Each Component defines a class that contains application data and logic.
    -> It is associated with a HTML templates that defines the view to be displayed to target environment.
@@ -40,22 +41,25 @@ Completed Below Topics
 	   => Example: component is product ==> product.component.ts, product.component.ts , product.component.ts.
 	      These 3 files will be transpiled to get "product.js" which will be residing in main.js. 
    -> SYNTAX TO CREATE COMPONENT: ng generate component <component-name> OR ng g c <component-name>
-   -> Create a component as Root Component:
+   ### Create a component as Root Component:
        => In App.module.ts with @ngModule wehave Bootstrap tag where we need o change with our newly defined component i.e. take our AppModule and add new module.
-	   => in index.html, changethe component name with '<app-first></app-first>'
+	   => in index.html, changethe component name with "<app-first> </app-first>"
 	   
-10)Use of ng-container 
+## Use of ng-container 
    -> The <ng-container> allows us to use structural directives without any extra element, 
-   making sure that the only DOM changes being applied are those dictated by the directives themselves.
+      making sure that the only DOM changes being applied are those dictated by the directives themselves.
    
-11)Directives:
+## Directives:
    -> Mainly used to manipulate DOM , which will be creating ,parsing and reconstruct the DOM.
    -> Its common business logic which can be used across the application.
    -> There are two types of directies 
-      => PREDEFINED DIRECTIVES :- Directives which are created by Angular framework.
-	     Predefined directives are categorized into 3 types.
-		 (a)STRUCTURAL DIRECTIVES: This will start with '*' Symmbol= >Mostly used for manipulating the DOM
-		    Examples: (i) *ngIf => This will check whether to render the DOM element based on conditions.
+      ### PREDEFINED DIRECTIVES :- 
+	        Directives which are created by Angular framework.
+	        Predefined directives are categorized into 3 types.
+		 #### STRUCTURAL DIRECTIVES: 
+		    This will start with '*' Symmbol= >Mostly used for manipulating the DOM
+		    ##### Examples: 
+			          (i) *ngIf => This will check whether to render the DOM element based on conditions.
 			          (ii)*ngFor=>This will iterate collection data structure,DOM will automatically rendered with collection.
 	    
 	  => CUSTOM DIRECTIVES :- Directives which are devloped by developer
