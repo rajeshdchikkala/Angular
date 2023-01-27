@@ -70,12 +70,13 @@
 		     - STRUCTURAL DIRECTIVES: 
 		        - This will start with `*` Symmbol. Mostly used for manipulating the DOM
 		        - Examples: 
-			          - `*ngIf` = This will check whether to render the DOM element based on conditions.
-			          - `*ngFor`= This will iterate collection data structure,DOM will automatically rendered with collection.
+			       - `*ngIf`  This will check whether to render the DOM element based on conditions.
+			       - `*ngFor` This will iterate collection data structure, DOM will automatically rendered with collection.
 	    
 	  - **CUSTOM DIRECTIVES :**
 	      - Directives which are developed by developer
-=======
+
+
 # Databind
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
