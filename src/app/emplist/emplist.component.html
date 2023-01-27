@@ -23,28 +23,29 @@
     </thead>
 
     <tbody>
+        <ng-container *ngFor="let emp of employees;trackBy:trackbyEMPCode;let i=index;">
+            <tr *ngIf="selectedRadioButtonValues=='All' || selectedRadioButtonValues==emp.gender">
+                <td>{{emp.empid}}</td>
+                <td>{{emp.empname|title:emp.gender}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.title}}</td>
+                <td>{{emp.salary}}</td>
+                
 
-        <tr *ngFor="let emp of employees;trackBy:trackbyEMPCode;let i=index">
-            <td>{{emp.empid}}</td>
-            <td>{{emp.empname|title:emp.gender}}</td>
-            <td>{{emp.gender}}</td>
-            <td>{{emp.title}}</td>
-            <td>{{emp.salary}}</td>
-            
+                <td [ngSwitch]="emp.department">
+                    <span *ngSwitchCase="1">HR</span>
+                    <span *ngSwitchCase="2">IT</span>
+                    <span *ngSwitchCase="3">Security</span>
+                    <span *ngSwitchCase="4">Finance</span>
+                    <span *ngSwitchDefault>Others</span>
 
-            <td [ngSwitch]="emp.department">
-                <span *ngSwitchCase="1">HR</span>
-                <span *ngSwitchCase="2">IT</span>
-                <span *ngSwitchCase="3">Security</span>
-                <span *ngSwitchCase="4">Finance</span>
-                <span *ngSwitchDefault>Others</span>
-
-            </td>
-            <td>{{emp.address}}</td>
-            <td>{{emp.dob}}</td>
-            <td>{{emp.dob|age}}</td>
-            <td>{{i}}</td>
-        </tr>
+                </td>
+                <td>{{emp.address}}</td>
+                <td>{{emp.dob}}</td>
+                <td>{{emp.dob|age}}</td>
+                <td>{{i}}</td>
+            </tr>
+        </ng-container>
     </tbody>
 </table>
 

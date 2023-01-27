@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class EmplistComponent {
    employees:any[]=[];
+   selectedRadioButtonValues:string="All";
 
   constructor(){
 
@@ -58,7 +59,8 @@ export class EmplistComponent {
     return employee.code;
   }
 
-  onEmployeeRadioChange(selectedRadioButtonValue:string):void{
-    console.log("List Component " + selectedRadioButtonValue);
+  onEmployeeRadioChange(radioButtonValue:string):void{
+    console.log("List Component " + radioButtonValue);
+    this.selectedRadioButtonValues=radioButtonValue;
   }
 }
