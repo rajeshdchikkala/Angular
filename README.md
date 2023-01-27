@@ -1,12 +1,17 @@
-# Angular
+# Angular Completed Below Topics
 
-# Completed Below Topics
 ## Basics of Angular
+
 ## Data binidng based on property
+
 ## Data pass from one component to another component
+
 ## loops and conditions
+
 ## Inline component call
+
 ## use of Trackby 
+   - TrackBy is a directive that can work with ngFor to identify items in a list of DOM elements like a list or array to perform unique updates in the DOM, improving the speed and performance.
    - Track by is used to get only changed row.
    
 ## Pipes/custom pipes creation and there uses
@@ -16,17 +21,17 @@
        ### Custom Pipe : 
 	          Pipes written with specific conditions by developer.
 	   ### Built in Pipes
-   ### SYNTAX FOR CREATING PIPE:
-       - ng g p `<pipe-name>`
+   - SYNTAX FOR CREATING PIPE:
+       - `ng g p <pipe-name>`
    
 ## Event emitter
    - Data flows into your component via property bindings and flows out of your component through event bindings. 
    - If we want your component to notify parent component about something then we can use the Output decorator with EventEmitter to create a custom event.
    - Uses:
-     -Use in components with the `@Output directive` to emit custom events synchronously or asynchronously, and register handlers for those events by subscribing to an instance
+     - Use in components with the `@Output directive` to emit custom events synchronously or asynchronously, and register handlers for those events by subscribing to an instance
 
 ## Modules:
-   - App Module :path is ./app/app-module
+   - App Module :path is ./app/app-module.
    - platformBrowserDynamic imported through `@angular/platform`.
    - In general every Angular project has Default Module and Defualt component.
        - Default Module = AppModule derived from ngModule.
@@ -36,7 +41,7 @@
    - App component is root component.
    
 ## Component
-   - It is building block of functional elements
+   - It is building block of functional elements.
    - Every angular application consists of at least one component.Each Component defines a class that contains application data and logic.
    - It is associated with a HTML templates that defines the view to be displayed to target environment.
    - In Angular, component will have 3 files which are as follows:
@@ -44,16 +49,16 @@
 	   - `<component-name>.component.html` where we write the view logic ie. frontend
 	   - `<component-name>.component.css` where we write the styling logic for displaying dom elements
 	   - Example: component is product = product.component.ts, product.component.ts , product.component.ts.
-	      These 3 files will be transpiled to get "product.js" which will be residing in main.js. 
+	              These 3 files will be transpiled to get `product.js` which will be residing in main.js. 
    - SYNTAX TO CREATE COMPONENT: 
-       - ng generate component `<component-name>` OR ng g c `<component-name>`
+       - `ng generate component <component-name>` OR `ng g c <component-name>`
    ### Create a component as Root Component:
        - In App.module.ts with @ngModule wehave Bootstrap tag where we need o change with our newly defined component i.e. take our AppModule and add new module.
-	   - in index.html, changethe component name with `<app-first> </app-first>`
+	   - in index.html, changethe component name with `<app-first></app-first>`
 	   
 ## Use of ng-container 
    - The `<ng-container>` allows us to use structural directives without any extra element, 
-      making sure that the only DOM changes being applied are those dictated by the directives themselves.
+     making sure that the only DOM changes being applied are those dictated by the directives themselves.
    
 ## Directives:
    - Mainly used to manipulate DOM, which will be creating, parsing and reconstruct the DOM.
@@ -62,11 +67,11 @@
       ### PREDEFINED DIRECTIVES : 
 	        - Directives which are created by Angular framework.
 	        - Predefined directives are categorized into 3 types.
-		 #### STRUCTURAL DIRECTIVES: 
-		    - This will start with `*` Symmbol. Mostly used for manipulating the DOM
-		    ##### Examples: 
-			          -(i) `*ngIf` = This will check whether to render the DOM element based on conditions.
-			          -(ii)`*ngFor`= This will iterate collection data structure,DOM will automatically rendered with collection.
+		      - STRUCTURAL DIRECTIVES: 
+		        - This will start with `*` Symmbol. Mostly used for manipulating the DOM
+		        - Examples: 
+			          - (i) `*ngIf` = This will check whether to render the DOM element based on conditions.
+			          - (ii)`*ngFor`= This will iterate collection data structure,DOM will automatically rendered with collection.
 	    
 	  ### CUSTOM DIRECTIVES :
 	        - Directives which are developed by developer
