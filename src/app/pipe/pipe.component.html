@@ -1,4 +1,4 @@
-<p> Default pipes and uses</p>
+<p appHighlight> Default pipes and uses</p>
 <label><b>var_one :</b></label> {{var_one | uppercase}} <br>
 <!-- var_one is argument and uppercase is condition-->
 <label><b>var_two :</b></label>{{var_two | lowercase}}<br>
@@ -22,3 +22,15 @@
 <label><b>var_nine :</b></label>{{var_nine}} <br>
 <label><b>var_nine_async :</b></label>{{var_nine | async}} <br>
 <label><b>var_ten_reverse_pipe :</b></label>{{var_ten | reverse}}<!-- Reverse custom pipe which we can use any where in project-->
+
+<p>---------------------------------------Renderer------------------------------------------------------------------------------------------------------</p>
+<P appRenderer>Renderer Directive Examples</P>
+<p appRenderer> Directive color applied</p>
+
+<p>---------------------------------------Host Listner------------------------------------------------------------------------------------------------------</p>
+<P appHostlistner>Hostlistner Directive Examples</P>
+<p appHostlistner> Listner Directive color applied</p>
+
+<p>---------------------------------------Host Binding------------------------------------------------------------------------------------------------------</p>
+<P appHostbind [defaultColor]="'yellow'" [highlightColor]="'green'">Host Binding Directive Examples</P>
+<p appHostbind [defaultColor]="'yellow'" [highlightColor]="'green'"> Host Binding Directive color applied</p>

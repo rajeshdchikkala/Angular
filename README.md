@@ -85,14 +85,38 @@
       - **PREDEFINED DIRECTIVES :** 
 	      - Directives which are created by Angular framework.
 	      - Predefined directives are categorized into 3 types.
-		     - STRUCTURAL DIRECTIVES: 
+		     - *STRUCTURAL DIRECTIVES:* 
+			    - Impact structure of DOM
 		        - This will start with `*` Symmbol. Mostly used for manipulating the DOM
 		        - Examples: 
 			       - `*ngIf`  This will check whether to render the DOM element based on conditions.
 			       - `*ngFor` This will iterate collection data structure, DOM will automatically rendered with collection.
-	    
+	         - *EVENT BASED Directives:*
+			    - This will hanle all DOM events like click,change,Input etc.. and will have `("<event-Name>")
+				- Custom events are also event based directives.
+				- (submit) ===> which will submit the page with input values
+				- (Click)  ===> perform when DOM ellement with click event
+				- (change) ===> Radio or checkbox or input element like test box change
+				- (Input)  ===> when any text entered into text box
+				- `(<custom-Event>)`===> output the eent from omponent 1 to component 2`.
+			 - *Attribute based Directives:*
+				- It will have `"[<Attribute Name>]"` to enhance DOM elements
+				- `[(ngModel)]`  ==>two way Databinding
+				- `[(ngSwitch)]` ==>Applying switch case
+				- `[(ngStyle)]`  ==>Applying the CSS style from Angular
 	  - **CUSTOM DIRECTIVES :**
 	      - Directives which are developed by developer
+		  - If we want to write our own common business logic which can be accessible through out the project.
+	      - Syntax to Create Directive :
+             - `ng generate directive <directivename> OR ng g d <directivename>`	
+          - To manipulate DOM and we can use the following interfaces with in deirectives
+             - *ElementRef*   ==> To access any DOM Elment        ==> we can apply style to this
+             - *Renderer2*    ==> Advance version of ElementRef	==> Dynamic Dom Manipulation
+             - *HostBinding*  ==> Binding DOM Element to an event
+			 - *HostListener* ==> Applying style with Renderer2 for an event which can be changed.
+		  - Scenario:
+             - creditcard text box ==> when user tries to fill `2311` visa symbol, `3221` Master card symbol, `555` Amex card symbol	and `any` other symbol should come.	  
+			 
 
 
 # Databind
