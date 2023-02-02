@@ -9,17 +9,18 @@ export class Ts2htmlComponent {
    title:string="Angular14"; //TypeScript variable
    datevalue:string="";
 
-   private userName:string="s.rani"; // updated values
+  private userName:string="s.rani";
    private firstName:string="Sandhya";
    private lastName:string="Rani";
    private emailId:string="sandhyarani@gmail.com";
 
   constructor(){
-    setInterval( () => {
+
+   // setInterval( () => {
          let currentdate=new Date();
          this.datevalue=currentdate.toDateString() +
         "  " + currentdate.toLocaleTimeString();
-    },1000);
+   // },1000);
   }
 
   getUserName():string{

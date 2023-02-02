@@ -117,7 +117,24 @@
 		  - Scenario:
              - creditcard text box ==> when user tries to fill `2311` visa symbol, `3221` Master card symbol, `555` Amex card symbol	and `any` other symbol should come.	  
 			 
-
+## Life Cycle ##
+	- A component has a lifecycle managed by Angular.
+	- **USES**
+		- Creates the component.
+		- Renders the component.
+		- Creates and renders the component children.
+		- Checks when the component data-bound properties change and
+		- Destroys the component before removing it from the DOM.
+		- There are `8` life cycle hooks. But mostly used are `ngOnInit`,`ngOnChanges` and `ngOnDestroy`.
+		  - ngOnInit
+		  - ngOnChanges
+		  - ngDoCheck
+		  - ngAfterViewInit
+		  - ngAfterViewChecked
+		  - ngAfterContentInit
+		  - ngAfterContentChecked
+		  - ngOnDestroy
+		
 
 # Databind
 

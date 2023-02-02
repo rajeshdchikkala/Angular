@@ -32,5 +32,15 @@
 <p appHostlistner> Listner Directive color applied</p>
 
 <p>---------------------------------------Host Binding------------------------------------------------------------------------------------------------------</p>
-<P appHostbind [defaultColor]="'yellow'" [highlightColor]="'green'">Host Binding Directive Examples</P>
+<!--<P appHostbind [defaultColor]="'yellow'" [highlightColor]="'green'">Host Binding Directive Examples</P>
 <p appHostbind [defaultColor]="'yellow'" [highlightColor]="'green'"> Host Binding Directive color applied</p>
+-->
+<p>------------------------------------ credit card logo using direcctives--------------------------------------------------------------</p>
+<h1> Credit Card Details</h1>
+<br><br>
+Card Number: <input type="text" [(ngModel)]="cardNumber"> 
+<br><br>
+<img appCclogo [cardNumber]="cardNumber">
+
+<p>--------------LifeCycleHook example and output----------------------------------------------------------------------------------------------------------------</p>
+<app-lifecyclehook></app-lifecyclehook>

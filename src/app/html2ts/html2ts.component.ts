@@ -32,8 +32,10 @@ export class Html2tsComponent implements OnInit{
            '777-777-7777'
          ]
        }
-    
-    setInterval( () => {
+       //Comment below line if you are using setinterval
+       this.buttonStatus=false;  
+    //uncomment below setinterval if you need runtime clr.
+    /*setInterval( () => {
          this.productStatus=Math.random()>0.5?"Available":"Not Availble"
     },1000);
 
@@ -41,7 +43,7 @@ export class Html2tsComponent implements OnInit{
       ()=>{
         this.buttonStatus=false
       },5000
-    )
+    )*/
   }
 
   //below method will be called on click event of button

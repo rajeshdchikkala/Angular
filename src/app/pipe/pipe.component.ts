@@ -20,6 +20,8 @@ export class PipeComponent {
 
   var_ten:string="hello";
 
+  cardNumber:string="";
+
   constructor(){
     this.var_nine=new  Promise(
       (resolve,reject)=>{

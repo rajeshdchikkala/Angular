@@ -1,0 +1,24 @@
+
+<input type="text" [(ngModel)]="userText">
+<br>
+<app-simpleinput [simpleInput]='userText'></app-simpleinput>
+
+<!--output 
+In Constructor and order value is :::1
+lifecyclehook.component.ts:21 In ngOnInit and order value is :::2
+lifecyclehook.component.ts:26 In ngDoCheck and order value is :::3
+lifecyclehook.component.ts:42 In ngAfterContentInit and order value is :::4
+lifecyclehook.component.ts:46 In Constructor and order value is :::5
+lifecyclehook.component.ts:34 In ngAfterViewInit and order value is :::6
+lifecyclehook.component.ts:38 In ngAfterViewChecked and order value is :::7
+core.mjs:23583 Angular is running in development mode. Call enableProdMode() to enable production mode.
+lifecyclehook.component.ts:26 In ngDoCheck and order value is :::8
+lifecyclehook.component.ts:46 In Constructor and order value is :::9
+lifecyclehook.component.ts:38 In ngAfterViewChecked and order value is :::10
+lifecyclehook.component.ts:26 In ngDoCheck and order value is :::11
+lifecyclehook.component.ts:46 In Constructor and order value is :::12
+lifecyclehook.component.ts:38 In ngAfterViewChecked and order value is :::13
+lifecyclehook.component.ts:26 In ngDoCheck and order value is :::14
+lifecyclehook.component.ts:46 In Constructor and order value is :::15
+lifecyclehook.component.ts:38 In ngAfterViewChecked and order value is :::16
+-->

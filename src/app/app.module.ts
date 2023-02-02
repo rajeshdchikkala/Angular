@@ -13,6 +13,13 @@ import { PipeComponent } from './pipe/pipe.component';
 import { ReversePipe } from './reverse.pipe';
 import { AgePipe } from './age.pipe';
 import { TitlePipe } from './title.pipe';
+import { HighlightDirective } from './highlight.directive';
+import { RendererDirective } from './renderer.directive';
+import { HostlistnerDirective } from './hostlistner.directive';
+import { HostbindingDirective } from './hostbinding.directive';
+import { LifecyclehookComponent } from './lifecyclehook/lifecyclehook.component';
+import { SimpleinputComponent } from './simpleinput/simpleinput.component';
+import { CclogoDirective } from './cclogo.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,14 @@ import { TitlePipe } from './title.pipe';
     PipeComponent,
     ReversePipe,
     AgePipe,
-    TitlePipe
+    TitlePipe,
+    HighlightDirective,
+    RendererDirective,
+    HostlistnerDirective,
+    HostbindingDirective,
+    LifecyclehookComponent,
+    SimpleinputComponent,
+    CclogoDirective
   ],
   imports: [
     BrowserModule,
