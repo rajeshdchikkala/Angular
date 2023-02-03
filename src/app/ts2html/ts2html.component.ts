@@ -15,7 +15,7 @@ export class Ts2htmlComponent {
    private emailId:string="sandhyarani@gmail.com";
 
   constructor(){
-
+   //uncomment below setinterval if you need runtime time.
    // setInterval( () => {
          let currentdate=new Date();
          this.datevalue=currentdate.toDateString() +

@@ -134,6 +134,31 @@
 	   - ngAfterContentInit
 	   - ngAfterContentChecked
 	   - ngOnDestroy
+	   
+## Services ##
+   - Business logic
+   - Mainly Services are the Business logic blocks which are mediator betoween component and middleware systems.
+   - Middleware can be any technology like .net, java, php etc... which uses Rest Protocol with Json object.
+   - These services mainly used to retrieve the data from Middleware, collecting the data from component and submitting the data to middleware.
+     system.
+   - Mainly CRUD operations will be performed using services.
+   - We should use POST for creating,PUT for updating, GET for retrieving and Delete for deleting the data.
+   - All Middleware system uses HTTP Protocol for communicating with Angular.
+   - We can use service layer for security purpose like Authentication and Authorization purpose.
+   - It uses Microservices Architecture on a design point of view. which achieves loosely coupling nature.
+   - Every component we can treat microservices only in functional point of view (not opertaion point of views).
+   - **Example:Banking system design**
+     - In Banking system , we have Account section which will have savingComponent,CurrentAccountComponent,JointComponent, FDComponent etc. which will connect to Account Service and which in turn will
+	   connect to middleware/DB.
+	 - Second section as Loan section which will have HomeLoanComponent,PersonalLoanCoponent, MortgateComp, VehicleLoanComponent and BusinessLoanComponent. Which are going to connect to Loan service and this service will connect to 
+       Middleware /DB.
+     - Any change in savingsaccount will impact Account service. CurrentAccountComponent will impact Account services but not loan service.
+     - Any change in HomeLoanComponent, PersonalLoanCoponent etc...will impact Loan services not Account servvices.	 
+     - WithdrawComp and DepositComp will use operationServices(Load balancing server).
+   - Angular uses DI (Dependent Injection Management) for managing state of data.
+   - **Two types of services : ** 
+     - Interacting with middleware (HTTP Layer).
+	 - Our Business Logic Dependency Layer.
 		
 
 # Databind
