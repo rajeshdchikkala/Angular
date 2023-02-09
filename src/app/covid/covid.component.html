@@ -1,0 +1,45 @@
+<table>
+    <thead>
+        <th>Date</th>
+        <th>New Confirmed</th>
+        <th>Total Confirmed</th>
+        <th>New Deaths</th>
+        <th>Total Deaths</th>
+    </thead>
+    <tbody>
+         <tr>
+            <td>{{covidInfo.Global.Date | date:"dd-MMM-yyyy"}}</td>
+            <td>{{covidInfo.Global.NewConfirmed}}</td>
+            <td>{{covidInfo.Global.TotalConfirmed}}</td>
+            <td>{{covidInfo.Global.NewDeaths}}</td>
+            <td>{{covidInfo.Global.TotalDeaths}}</td>
+         </tr>
+    </tbody>
+</table>
+<br>
+<table>
+    <thead>
+        <th>Date</th>
+        <th>Country</th>
+        <th>Country Code</th>
+        <th>New Confirmed</th>
+        <th>Total Confirmed</th>
+        <th>New Deaths</th>
+        <th>Total Deaths</th>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let crcd of covidInfo.Countries;">
+            <tr>
+                <td>{{crcd.Date | date:"dd-MMM-yyyy"}}</td>
+                <td>{{crcd.Country}}</td>
+                <td>{{crcd.CountryCode}}</td>
+                <td>{{crcd.NewConfirmed}}</td>
+                <td>{{crcd.TotalConfirmed}}</td>
+                <td>{{crcd.NewDeaths}}</td>
+                <td>{{crcd.TotalDeaths}}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
+<hr>
+<app-list-account></app-list-account>

@@ -13,42 +13,42 @@ AfterContentChecked,OnDestroy{
   userText:string="";
 
   constructor(){
-    console.log("In Constructor and order value is :::"+ this.order);
+   // console.log("In Constructor and order value is :::"+ this.order);
     this.order++;
   }
 
   ngOnInit(){
-    console.log("In ngOnInit and order value is :::"+ this.order);
+   // console.log("In ngOnInit and order value is :::"+ this.order);
     this.order++;
   }
 
   ngDoCheck(){
-    console.log("In ngDoCheck and order value is :::"+ this.order);
+   // console.log("In ngDoCheck and order value is :::"+ this.order);
     this.order++;
   }
   ngOnChanges(){
-    console.log("In ngOnChanges and order value is :::"+ this.order);
+  //  console.log("In ngOnChanges and order value is :::"+ this.order);
     this.order++;
   }
   ngAfterViewInit(){
-    console.log("In ngAfterViewInit and order value is :::"+ this.order);
+   // console.log("In ngAfterViewInit and order value is :::"+ this.order);
     this.order++;
   }
   ngAfterViewChecked(){
-    console.log("In ngAfterViewChecked and order value is :::"+ this.order);
+   // console.log("In ngAfterViewChecked and order value is :::"+ this.order);
     this.order++;
   }
   ngAfterContentInit(){
-    console.log("In ngAfterContentInit and order value is :::"+ this.order);
+  //  console.log("In ngAfterContentInit and order value is :::"+ this.order);
     this.order++;
   }
   ngAfterContentChecked(){
-    console.log("In Constructor and order value is :::"+ this.order);
+   // console.log("In Constructor and order value is :::"+ this.order);
     this.order++;
   }
 
   ngOnDestroy(){
-    console.log("In Constructor and order value is :::"+ this.order);
+   // console.log("In Constructor and order value is :::"+ this.order);
     this.order++;
   }
 

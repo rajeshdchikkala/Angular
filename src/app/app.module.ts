@@ -20,6 +20,11 @@ import { HostbindingDirective } from './hostbinding.directive';
 import { LifecyclehookComponent } from './lifecyclehook/lifecyclehook.component';
 import { SimpleinputComponent } from './simpleinput/simpleinput.component';
 import { CclogoDirective } from './cclogo.directive';
+import { CovidComponent } from './covid/covid.component';
+import { HttpClientModule} from  '@angular/common/http';
+import { AcccreateComponent } from './acccreate/acccreate.component';
+import { AcctstatusComponent } from './acctstatus/acctstatus.component';
+import { ListAccountComponent } from './list-account/list-account.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +44,17 @@ import { CclogoDirective } from './cclogo.directive';
     HostbindingDirective,
     LifecyclehookComponent,
     SimpleinputComponent,
-    CclogoDirective
+    CclogoDirective,
+    CovidComponent,
+    AcccreateComponent,
+    AcctstatusComponent,
+    ListAccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [Ts2htmlComponent]
