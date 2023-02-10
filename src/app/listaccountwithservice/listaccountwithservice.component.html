@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <!-- <app-acccreate (accountAdded)="onAccountAdded($event)"> -->
+          <app-acccreatewithservice>
+        </app-acccreatewithservice>
+        <hr>
+        
+          <app-acctstatuswithservice
+          *ngFor="let acc of accounts; let i = index"
+          [account]="acc"
+          [id]="i"
+          ></app-acctstatuswithservice>
+      </div>
+    </div>
+  </div>

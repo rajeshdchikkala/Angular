@@ -25,6 +25,9 @@ import { HttpClientModule} from  '@angular/common/http';
 import { AcccreateComponent } from './acccreate/acccreate.component';
 import { AcctstatusComponent } from './acctstatus/acctstatus.component';
 import { ListAccountComponent } from './list-account/list-account.component';
+import { AcccreatewithserviceComponent } from './acccreatewithservice/acccreatewithservice.component';
+import { AcctstatuswithserviceComponent } from './acctstatuswithservice/acctstatuswithservice.component';
+import { ListaccountwithserviceComponent } from './listaccountwithservice/listaccountwithservice.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { ListAccountComponent } from './list-account/list-account.component';
     CovidComponent,
     AcccreateComponent,
     AcctstatusComponent,
-    ListAccountComponent
+    ListAccountComponent,
+    AcccreatewithserviceComponent,
+    AcctstatuswithserviceComponent,
+    ListaccountwithserviceComponent
   ],
   imports: [
     BrowserModule,
