@@ -39,3 +39,22 @@
        </div>
     </div>
 </div>
+
+<br>
+<div class="container">
+  <div class="row" *ngIf="submitted">
+
+    <div class="col-xs-12">
+    
+      <h3>Submitted  Data</h3>
+    
+      <p>UserName : {{userjsnObj.username}} </p>
+      <p>Email:{{userjsnObj.email}}</p>
+      <p>Gender:{{userjsnObj.gender}}</p>
+      <p>Secret Question:{{userjsnObj.secret}}</p>
+      <p>Answer:{{userjsnObj.answer}}</p>
+    </div>
+    
+    
+    </div>
+</div>
